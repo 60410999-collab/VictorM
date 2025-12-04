@@ -1,5 +1,3 @@
-# Programa: cálculo de factorial
-
 n = int(input("Ingresa un número entero n (n >= 0): "))
 
 if n < 0:
