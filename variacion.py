@@ -1,6 +1,3 @@
-# ej7_variacion.py
-# Programa: variación V(n, k)
-
 def factorial(n):
     resultado = 1
     for i in range(1, n + 1):
