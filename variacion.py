@@ -1,18 +1,11 @@
-def factorial(n):
-    resultado = 1
-    for i in range(1, n + 1):
-        resultado *= i
-    return resultado
+def variacionConModificacion(n, k):
+    return n ** k
 
 n = int(input("Ingresa n (total de elementos): "))
 k = int(input("Ingresa k (lugares a ordenar): "))
 
 if k < 0 or k > n:
-    print("k debe estar entre 0 y n.")
+    print("Error... debe estar entre 0 y n")
 else:
-    n_fact = factorial(n)
-    n_k_fact = factorial(n - k)
-
-    V = n_fact / n_k_fact
-
+    V = variacionConModificacion(n, k)
     print("V(", n, ",", k, ") =", V)
